@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('/fonts/Ubuntu-R.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Ubuntu-B';
+    src: url('/fonts/Ubuntu-B.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Ubuntu-Th';
+    src: url('/fonts/Ubuntu-Th.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
