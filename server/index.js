@@ -85,7 +85,7 @@ app.post('/api/login', async (req, res) => {
     }
 })
 
-app.get('/api/login-support', async (req, res) => {
+app.post('/api/login-support', async (req, res) => {
     console.log(req.session)
     const user = await User.findOne({
         username: req.body.username,
@@ -109,7 +109,7 @@ app.get('/api/me', async (req, res) => {
     }
 })
 
-app.get('/api/reset_password', async (req, res) => {
+app.post('/api/reset_password', async (req, res) => {
     const newPassword = req.body.password
     const user = await User.findById(req.session.userId)
     if (user) {
@@ -123,7 +123,7 @@ app.get('/api/reset_password', async (req, res) => {
 })
 
 
-app.get('/api/support', async (req, res) => {
+app.post('/api/support', async (req, res) => {
 
     const reset = async (cookie) => {
 
